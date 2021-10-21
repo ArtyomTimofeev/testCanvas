@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='style.css'>
+    </link>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Canvas</title>
+</head>
+
+<body>
+    <main>
+        <div class="nav">
+            <form class="form-points" action="script.js">
+                <h1>Точки</h1>
+                <br>
+                <br>
+                <div><input type="number" class='input-number' placeholder="Введите число точек"></div>
+                <br>
+                <div><input type="submit" class='btn btn-success' value='Нарисовать'></div>
+            </form>
+            <form class='form-rectangle'>
+                <div class='inputs'>
+                    <h1>Прямоугольник</h1>
+                    <br>
+                    <br>
+                    <div><input type='number' class='input-coord-x1' placeholder="Введите Х1"></div>
+                    <div><input type='number' class='input-coord-y1' placeholder="Введите Y1"></div>
+                    <br>
+                    <div><input type='number' class='input-coord-x2' placeholder="Введите Х2"></div>
+                    <div><input type='number' class='input-coord-y2' placeholder="Введите Y2"></div>
+                </div>
+                <br>
+                <div><input type="submit" class='btn btn-success' value='Нарисовать'></div>
+            </form>
+        </div>
+        <div class="canvas">
+            <canvas id='canvas' width='700' height="500"></canvas>
+        </div>
+        <div class="message">
+            <h1 class="message-header">Количество точек внутри прямоугольника: 0</h1>
+        </div>
+    </main>
+    <script src='script.js'></script>
+
+</body>
+
+</html>
